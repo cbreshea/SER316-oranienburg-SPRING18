@@ -262,7 +262,7 @@ public class AppFrame extends JFrame {
         contentPane = (JPanel) this.getContentPane();
         contentPane.setLayout(borderLayout1);
         //this.setSize(new Dimension(800, 500));
-        this.setTitle("Memoranda - " + CurrentProject.get().getTitle());
+        this.setTitle("Plan-it - " + CurrentProject.get().getTitle());
         //Added a space to App.VERSION_INFO to make it look some nicer
         statusBar.setText(" Version:" + App.VERSION_INFO + " (Build "
                 + App.BUILD_INFO + " )");
@@ -664,9 +664,9 @@ public class AppFrame extends JFrame {
         System.exit(0);
     }
 
+    // Updated doMinimize to remove useless functionality and call new minimizeWindow method in App (Anthony Kowalczyk)
     public void doMinimize() {
-        exitNotify();
-        App.closeWindow();
+        App.minimizeWindow();
     }
 
     //Help | About action performed
@@ -685,7 +685,12 @@ public class AppFrame extends JFrame {
             if (Configuration.get("ON_CLOSE").equals("exit"))
                 doExit();
             else
-                doMinimize();
+                //doMinimize();
+            	/* Zachary Christensen
+            	 * Changing this functionality allows for the program to perform to the request of 
+            	 * User Story #2.
+            	 */
+            	doExit();
         }
         else if ((e.getID() == WindowEvent.WINDOW_ICONIFIED)) {
             super.processWindowEvent(new WindowEvent(this,

@@ -138,11 +138,41 @@ public class App {
 
 	}
 
+	
 	public static void closeWindow() {
 		if (frame == null)
 			return;
 		frame.dispose();
+		
 	}
+	
+	// New method that is called from App_Frame to minimize (Anthony Kowalczyk)
+	public static void minimizeWindow() {
+		frame.setVisible(true);
+		frame.setState(Frame.ICONIFIED);
+	}
+	
+	/*//I found out this wasn't necessary so it's commented out unless it's needed later
+	public static void exitWindow()
+	{
+		 Zachary Christensen
+		 * 
+		 * The AppFrame method doExit() is already configured for a correct termination, used in the 
+		 * File -> Exit menu button. The line of code that is causing the program to successfully terminate
+		 * is System.exit(0), which was an earlier proposed solution. This caused issues of completely
+		 * closing the program in scenarios when only the window should be closed. So, this separate method
+		 * will be used for the "x" button, and closeWindow() will be used for the other situations.
+		 
+		
+		//This part is a safety net, like in closeWindow()
+		if (frame == null)
+		{
+			return;
+		}
+		
+		//This launches the already created ExitConfirmationDialog.
+		frame.doExit();
+	}*/
 
 	/**
 	 * Method showSplash.
@@ -162,5 +192,5 @@ public class App {
 			(screenSize.height - 300) / 2);
 		splash.setUndecorated(true);
 		splash.setVisible(true);
-	}
+	} 
 }
