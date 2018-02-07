@@ -1,20 +1,17 @@
 Meeting Notes 2/7:
 
-fix mac minimize
-make meeting notes for github
-quality policies for git
-	git and unit testing
+TODO:
+- fix mac minimize (be sure instructor knows if we have OS issues)
+- make meeting notes for github
+- add more to sprint wiki
+- create quality policies for git (git and unit testing)
+	- quality: what are you planning to do for the unit testing?
+- create 1 unit test per person
+- create more user stories
 
-quality: what are you planning to do for the unit testing?
-
-1 unit test per person
-
-branch name: us_(number)
-
-need a develpment branch
-	intermediate branch
-
-have good commit messages
-
-lines of code goal is more for quality code, not copy-pasting
+Future Notes:
+- need a develpment branch (intermediate branch)
+- have good commit messages
+- use correct branch names (branch name: us_(number))
+- lines of code goal is more for quality code, not copy-pasting
 
