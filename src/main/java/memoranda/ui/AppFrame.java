@@ -664,9 +664,9 @@ public class AppFrame extends JFrame {
         System.exit(0);
     }
 
+    // Updated doMinimize to remove useless functionality and call new minimizeWindow method in App (Anthony Kowalczyk)
     public void doMinimize() {
-        exitNotify();
-        App.closeWindow();
+        App.minimizeWindow();
     }
 
     //Help | About action performed

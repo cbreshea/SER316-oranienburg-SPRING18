@@ -146,6 +146,11 @@ public class App {
 		
 	}
 	
+	// New method that is called from App_Frame to minimize (Anthony Kowalczyk)
+	public static void minimizeWindow() {
+		frame.setVisible(true);
+		frame.setState(Frame.ICONIFIED);
+	}
 	
 	/*//I found out this wasn't necessary so it's commented out unless it's needed later
 	public static void exitWindow()
@@ -187,5 +192,5 @@ public class App {
 			(screenSize.height - 300) / 2);
 		splash.setUndecorated(true);
 		splash.setVisible(true);
-	}
+	} 
 }
