@@ -4,6 +4,7 @@ fix mac minimize
 make meeting notes for github
 quality policies for git
 	git and unit testing
+
 quality: what are you planning to do for the unit testing?
 
 1 unit test per person
