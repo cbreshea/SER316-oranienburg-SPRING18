@@ -39,7 +39,7 @@ public class App {
 	//public static final String BUILD_INFO = "@BUILD@";
 	
 	/*
-	 * 		Mohammed Edit
+	 * 		Mohammed Edit 2/7
 	 */
 	public static final String VERSION_INFO = "1.0-rc3.1";
 	public static final String BUILD_INFO = "v1.5.2";
