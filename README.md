@@ -1,5 +1,6 @@
 Project SER316
 
+
 # spring18project
 This is the initial dump for the ser316 spring 2018 project. It is a slightly modified version of the Memoranda project from memoranda.sf.net
 
@@ -27,3 +28,4 @@ Dr. Mehlhase
 
 
 (Zachary Christensen hello!)
+(Charles Breshears was here yay)
