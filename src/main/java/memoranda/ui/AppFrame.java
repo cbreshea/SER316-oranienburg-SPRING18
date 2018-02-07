@@ -685,7 +685,12 @@ public class AppFrame extends JFrame {
             if (Configuration.get("ON_CLOSE").equals("exit"))
                 doExit();
             else
-                doMinimize();
+                //doMinimize();
+            	/* Zachary Christensen
+            	 * Changing this functionality allows for the program to perform to the request of 
+            	 * User Story #2.
+            	 */
+            	doExit();
         }
         else if ((e.getID() == WindowEvent.WINDOW_ICONIFIED)) {
             super.processWindowEvent(new WindowEvent(this,
