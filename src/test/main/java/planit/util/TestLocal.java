@@ -68,7 +68,7 @@ public class TestLocal {
 		assertTrue(loc.getString(str).equals("oranienburg"));
 	}
 
-	/* To be tested Later
+	/* To be tested Laterr
 	@Test
 	public void testGetMonthName() {
 		int month = 1;
