@@ -72,7 +72,7 @@ public class AgendaPanel extends JPanel {
 			ex.printStackTrace();
 		}
 	}
-	void jbInit() throws Exception {
+	public void jbInit() throws Exception {
 		expandedTasks = new ArrayList();
 
 		toolBar.setFloatable(false);
