@@ -50,10 +50,32 @@ public class TestLocal {
 	public void tearDown() throws Exception {
 	}
 
+	/*
+	 * 	Mohammed: Test cases to check the returned string of the getString
+	 */
 	@Test
 	public void testGetString() {
+		String str = "ORANIENBURG";
+		assertTrue(loc.getString(str).equals("ORANIENBURG"));
 		
-		assertTrue(loc.getString("NON").equals("NON"));
+		str = "";
+		assertTrue(loc.getString(str).equals(""));
+		
+		str = new String();
+		assertTrue(loc.getString(str).equals(""));
+		
+		str = "oranienburg";
+		assertTrue(loc.getString(str).equals("oranienburg"));
 	}
 
+	/* To be tested Later
+	@Test
+	public void testGetMonthName() {
+		int month = 1;
+		assertTrue(loc.getMonthName(month).equals("JAN"));
+		
+		month = 12;
+		//assertTrue(loc.getMonthName(month).equals("December"));
+	}
+	*/
 }
